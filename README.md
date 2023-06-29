@@ -1,4 +1,4 @@
-# PULSE-COVID-19: A Large Language Model for knowledge extraction on SARAS-COV-2
+# PULSE-COVID-19: A Large Language Model for knowledge extraction on COVID-19
 <!-- select Model and/or Data and/or Code as needed>
 ### Welcome to OpenMEDLab! 👋
 
@@ -20,12 +20,12 @@
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-brightgreen.svg)](./LICENSE)
 [![Model License](https://img.shields.io/badge/Model%20License-GNU%20AGPL%203.0-red.svg)](./MODEL_LICENSE)
 
-This repository provides the official PyTorch implementation of the model **PULSE-COVID-19: A Large Language Model for knowledge extraction on SARAS-COV-2** <br>
+This repository provides the official PyTorch implementation of the model **PULSE-COVID-19: A Large Language Model for knowledge extraction on COVID-19** <br>
 
 ## Introduction
 This model was fine-tuned based on the [PULSE](https://github.com/openmedlab/PULSE) LLM, incorporating an in-house corpus of COVID-19 knowledge databases from the Guangzhou Laboratory. The objective was to augment the capabilities of LLMs in assimilating and responding to disease-specific knowledge. This enhanced understanding is expected to contribute towards future epidemic prevention and disease treatment efforts.
 
-### Contributors:
+## Contributors
 - Guangzhou Laboratory: [Yixue Li](https://scholar.google.com/citations?hl=en&user=Qv27G1cAAAAJ), [Feng Gao](https://scholar.google.com/citations?hl=en&user=deiLMp8AAAAJ), [Junwei Liu](https://scholar.google.com/citations?hl=en&user=VuuF5pIAAAAJ), Yiping Chen, Lu Zhou.
 
 - Shanghai AI Laboratory: [Shaoting Zhang](https://scholar.google.com/citations?user=oiBMWK4AAAAJ&hl=en&oi=ao), [Xiaofan Zhang](http://www.qingyuan.sjtu.edu.cn/a/zhang-xiao-fan-1.html).
@@ -33,20 +33,17 @@ This model was fine-tuned based on the [PULSE](https://github.com/openmedlab/PUL
 ## Key Features
 [//]: # (key feature bulletin points here)
 
-- Developed a Large Language Model (LLM) specifically for the SARS-CoV-2 disease domain.
-- Incorporated a comprehensive, in-house SARS-CoV-2 knowledge dataset from Guangzhou Laboratory.
-- Provides more reliable question answering and knowledge extraction related to SARS-CoV-2 disease.
+- Developed a Large Language Model (LLM) specifically for the COVID-19 disease domain.
+- Incorporated a comprehensive, in-house COVID-19 knowledge dataset from Guangzhou Laboratory.
+- Provides more reliable question answering and knowledge extraction related to the COVID-19 epidemic and SARS-COV-2 virus.
 
 <!-- [Code] may link to your project at your institute>
-
 <!-- give a introduction of your project -->
 
 ## Details
-
-> Large language models (LLMs) have demonstrated their promising performance in comprehending natural languages and adpating to multiple downstream tasks. Despite their robust generalized abilities, the use of LLMs in certain domains, notably in the medical and clinical fields, is limited due to the potential for inaccurate responses and incorrect knowledge extraction. The SARS-CoV-2 epidemic has had a global impact, causing millions of deaths and significantly affecting the world economy. As a response, scientists have carried out extensive basic and clinical research to understand the virological characteristics, mutational landscapes, and clinical aspects of SARS-CoV-2 to aid in its diagnosis and treatment. This has resulted in thousands of scientific papers and the establishment of disease-specific regulatory mechanisms, presenting an opportunity for LLMs to fine-tune with these SARS-CoV-2 related datasets for reliable knowledge queries and responses. In this study, we combined the in-house SARS-COV-2 disease knowledge datasets from our collaborator at Guangzhou Labortory with our new LLM framework (PLUSE), to construct a SARS-COV-2 disease-specific LLM model (PLUSE-COVID-19). Our disease-specific LLM outperforms other existing LLMs of similar size of parameters in disease-related question answering and SARS-COV-2 related knowledge extraction, demonstrating the potential of applying LLMs in various specific domains.
+> Large language models (LLMs) have demonstrated their promising performance in comprehending natural languages and adapting to multiple downstream tasks. Despite their robust generalized abilities, the use of LLMs in certain domains, notably in the medical and clinical fields, is limited due to the potential for inaccurate responses and incorrect knowledge extraction. The COVID-19 epidemic has had a global impact, causing millions of deaths and significantly affecting the world economy. As a response, scientists have carried out extensive basic and clinical research to understand the virological characteristics, mutational landscapes, and clinical aspects of the SARS-CoV-2 virus to aid in its diagnosis and treatment. This has resulted in thousands of scientific papers and the establishment of disease-specific regulatory mechanisms, presenting an opportunity for LLMs to fine-tune with these COVID-19-related datasets for reliable knowledge queries and responses. In this study, we combined the in-house COVID-19 disease knowledge datasets from our collaborator at Guangzhou Laboratory with our new LLM framework (PULSE), to construct a SARS-COV-2 disease-specific LLM model (PULSE-COVID-19). Our disease-specific LLM outperforms other existing LLMs of similar size of parameters in disease-related question answering and SARS-COV-2-related knowledge extraction, demonstrating the potential of applying LLMs in various specific domains.
 
 ## Get Started
-
 #### installation
 1. Download the contents of this repository to your local/remote server.
 
@@ -61,9 +58,6 @@ cd PULSE-COVID-19
 conda env create -f llm.yml
 conda activate llm
 ```
-
-The versions of `torch` and `transformers` should be higher than the suggested versions.
-
 #### Evaluation
 
 **Gradio**
@@ -125,7 +119,7 @@ python web_demo_gradio_gd.py
 
 ## Note
 
-Please note that certain responses or conclusions provided by this model regarding COVID-19 specific knowledge queries may be inaccurate, outdated, or limited. Our team is continuously striving to enhance the accuracy and reliability of the answers by improving and updating the model's training corpus and algorithms. We greatly appreciate user feedback and corrections as they help us refine the model and deliver an improved service.
+Please note that certain responses or conclusions provided by this model regarding COVID-19-specific knowledge queries may be inaccurate, outdated, or limited. Our team continuously strives to enhance the answers' accuracy and reliability by improving and updating the model's training corpus and algorithms. We greatly appreciate user feedback and corrections as they help us refine the model and deliver an improved service.
 
 ## License
 
