@@ -14,7 +14,7 @@
 <!-- Insert the project banner here -->
 
 <p align="center" width="100%">
-<img src="Images/BannerDesign.png" alt="MOSS" style="width: 60%; min-width: 350px; display: block; margin: 30px;">
+<img src="Images/BannerDesign.png" alt="MOSS" style="width: 100%; min-width: 350px; display: block; margin: 30px;">
 </p>
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-brightgreen.svg)](./LICENSE)
