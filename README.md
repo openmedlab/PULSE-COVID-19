@@ -25,7 +25,7 @@ This repository provides the official PyTorch implementation of the model **PULS
 ## Introduction
 This model was fine-tuned based on the [PULSE](https://github.com/openmedlab/PULSE) LLM, incorporating an in-house corpus of COVID-19 knowledge databases from the Guangzhou Laboratory. The objective was to augment the capabilities of LLMs in assimilating and responding to disease-specific knowledge. This enhanced understanding is expected to contribute towards future epidemic prevention and disease treatment efforts.
 
-### Contributors:
+## Contributors:
 - Guangzhou Laboratory: [Yixue Li](https://scholar.google.com/citations?hl=en&user=Qv27G1cAAAAJ), [Feng Gao](https://scholar.google.com/citations?hl=en&user=deiLMp8AAAAJ), [Junwei Liu](https://scholar.google.com/citations?hl=en&user=VuuF5pIAAAAJ), Yiping Chen, Lu Zhou.
 
 - Shanghai AI Laboratory: [Shaoting Zhang](https://scholar.google.com/citations?user=oiBMWK4AAAAJ&hl=en&oi=ao), [Xiaofan Zhang](http://www.qingyuan.sjtu.edu.cn/a/zhang-xiao-fan-1.html).
