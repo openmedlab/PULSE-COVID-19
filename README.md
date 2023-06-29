@@ -66,7 +66,7 @@ conda activate llm
 python web_demo_gradio_gd.py
 ```
 
-### SARS-COV-2 Question Answering
+## COVID-19 Question Answering
 
 ---
 
