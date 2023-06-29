@@ -44,7 +44,7 @@ This model was fine-tuned based on the [PULSE](https://github.com/openmedlab/PUL
 > Large language models (LLMs) have demonstrated their promising performance in comprehending natural languages and adapting to multiple downstream tasks. Despite their robust generalized abilities, the use of LLMs in certain domains, notably in the medical and clinical fields, is limited due to the potential for inaccurate responses and incorrect knowledge extraction. The COVID-19 epidemic has had a global impact, causing millions of deaths and significantly affecting the world economy. As a response, scientists have carried out extensive basic and clinical research to understand the virological characteristics, mutational landscapes, and clinical aspects of the SARS-CoV-2 virus to aid in its diagnosis and treatment. This has resulted in thousands of scientific papers and the establishment of disease-specific regulatory mechanisms, presenting an opportunity for LLMs to fine-tune with these COVID-19-related datasets for reliable knowledge queries and responses. In this study, we combined the in-house COVID-19 disease knowledge datasets from our collaborator at Guangzhou Laboratory with our new LLM framework (PULSE), to construct a SARS-COV-2 disease-specific LLM model (PULSE-COVID-19). Our disease-specific LLM outperforms other existing LLMs of similar size of parameters in disease-related question answering and SARS-COV-2-related knowledge extraction, demonstrating the potential of applying LLMs in various specific domains.
 
 ## Get Started
-#### installation
+### Installation
 1. Download the contents of this repository to your local/remote server.
 
 ```bash
@@ -58,7 +58,7 @@ cd PULSE-COVID-19
 conda env create -f llm.yml
 conda activate llm
 ```
-#### Evaluation
+### Evaluation
 
 **Gradio**
 
