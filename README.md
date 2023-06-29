@@ -1,4 +1,4 @@
-# XXX: A Large Language Model for knowledge extraction on SARAS-COV-2
+# PULSE-COVID-19: A Large Language Model for knowledge extraction on SARAS-COV-2
 <!-- select Model and/or Data and/or Code as needed>
 ### Welcome to OpenMEDLab! 👋
 
@@ -11,77 +11,24 @@
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
 
-
 <!-- Insert the project banner here -->
 
-[//]: # (<div align="center">)
+<p align="center" width="100%">
+<img src="Images/BannerDesign.png" alt="MOSS" style="width: 60%; min-width: 350px; display: block; margin: 30px;">
+</p>
 
-[//]: # (    <a href="https://"><img width="1000px" height="auto" src="https://github.com/openmedlab/sampleProject/blob/main/banner_sample.png"></a>)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-brightgreen.svg)](./LICENSE)
+[![Model License](https://img.shields.io/badge/Model%20License-GNU%20AGPL%203.0-red.svg)](./MODEL_LICENSE)
 
-[//]: # (</div>)
+This repository provides the official PyTorch implementation of the model **PULSE-COVID-19: A Large Language Model for knowledge extraction on SARAS-COV-2** <br>
 
-[//]: # (---)
+## Introduction
+This model was fine-tuned based on the [PULSE](https://github.com/openmedlab/PULSE) LLM, incorporating an in-house corpus of COVID-19 knowledge databases from the Guangzhou Laboratory. The objective was to augment the capabilities of LLMs in assimilating and responding to disease-specific knowledge. This enhanced understanding is expected to contribute towards future epidemic prevention and disease treatment efforts.
 
-<!-- Select some of the point info, feel free to delete -->
+### Contributors:
+- Guangzhou Laboratory: [Yixue Li](https://scholar.google.com/citations?hl=en&user=Qv27G1cAAAAJ), [Feng Gao](https://scholar.google.com/citations?hl=en&user=deiLMp8AAAAJ), [Junwei Liu](https://scholar.google.com/citations?hl=en&user=VuuF5pIAAAAJ), Yiping Chen, Lu Zhou.
 
-[//]: # ([![Twitter]&#40;https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fopendilab&#41;]&#40;https://twitter.com/opendilab&#41;)
-
-[//]: # ([![PyPI]&#40;https://img.shields.io/pypi/v/DI-engine&#41;]&#40;https://pypi.org/project/DI-engine/&#41;)
-
-[//]: # (![Conda]&#40;https://anaconda.org/opendilab/di-engine/badges/version.svg&#41;)
-
-[//]: # (![Conda update]&#40;https://anaconda.org/opendilab/di-engine/badges/latest_release_date.svg&#41;)
-
-[//]: # (![PyPI - Python Version]&#40;https://img.shields.io/pypi/pyversions/DI-engine&#41;)
-
-[//]: # (![PyTorch Version]&#40;https://img.shields.io/badge/dynamic/json?color=blue&label=pytorch&query=%24.pytorchVersion&url=https%3A%2F%2Fgist.githubusercontent.com/PaParaZz1/54c5c44eeb94734e276b2ed5770eba8d/raw/85b94a54933a9369f8843cc2cea3546152a75661/badges.json&#41;)
-
-[//]: # ()
-[//]: # ()
-[//]: # (![Loc]&#40;https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/HansBug/3690cccd811e4c5f771075c2f785c7bb/raw/loc.json&#41;)
-
-[//]: # (![Comments]&#40;https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/HansBug/3690cccd811e4c5f771075c2f785c7bb/raw/comments.json&#41;)
-
-[//]: # ()
-[//]: # (![Style]&#40;https://github.com/opendilab/DI-engine/actions/workflows/style.yml/badge.svg&#41;)
-
-[//]: # (![Docs]&#40;https://github.com/opendilab/DI-engine/actions/workflows/doc.yml/badge.svg&#41;)
-
-[//]: # (![Unittest]&#40;https://github.com/opendilab/DI-engine/actions/workflows/unit_test.yml/badge.svg&#41;)
-
-[//]: # (![Algotest]&#40;https://github.com/opendilab/DI-engine/actions/workflows/algo_test.yml/badge.svg&#41;)
-
-[//]: # (![deploy]&#40;https://github.com/opendilab/DI-engine/actions/workflows/deploy.yml/badge.svg&#41;)
-
-[//]: # ([![codecov]&#40;https://codecov.io/gh/opendilab/DI-engine/branch/main/graph/badge.svg?token=B0Q15JI301&#41;]&#40;https://codecov.io/gh/opendilab/DI-engine&#41;)
-
-[//]: # ()
-[//]: # (![GitHub Org's stars]&#40;https://img.shields.io/github/stars/opendilab&#41;)
-
-[//]: # ([![GitHub stars]&#40;https://img.shields.io/github/stars/opendilab/DI-engine&#41;]&#40;https://github.com/Med-AIR/Endo-FM/stargazers&#41;)
-
-[//]: # ([![GitHub forks]&#40;https://img.shields.io/github/forks/opendilab/DI-engine&#41;]&#40;https://github.com/Med-AIR/Endo-FM/network&#41;)
-
-[//]: # (![GitHub commit activity]&#40;https://img.shields.io/github/commit-activity/m/opendilab/DI-engine&#41;)
-
-[//]: # ([![GitHub issues]&#40;https://img.shields.io/github/issues/opendilab/DI-engine&#41;]&#40;https://github.com/opendilab/DI-engine/issues&#41;)
-
-[//]: # ([![GitHub pulls]&#40;https://img.shields.io/github/issues-pr/opendilab/DI-engine&#41;]&#40;https://github.com/opendilab/DI-engine/pulls&#41;)
-
-[//]: # ([![Contributors]&#40;https://img.shields.io/github/contributors/opendilab/DI-engine&#41;]&#40;https://github.com/opendilab/DI-engine/graphs/contributors&#41;)
-
-[//]: # ([![GitHub license]&#40;https://img.shields.io/github/license/opendilab/DI-engine&#41;]&#40;https://github.com/Med-AIR/Endo-FM/blob/master/LICENSE&#41;)
-
-[//]: # (Updated on 2023.06.09)
-
-
-This repository provides the official PyTorch implementation of the model [**XXX: A Large Language Model for knowledge extraction on SARAS-COV-2**](TBA)
-by [xxx](https://kyfafyd.wang)\*, Junwei Liu\*, Yixue Li†, and [Xiaofan Zhang](http://www.qingyuan.sjtu.edu.cn/a/zhang-xiao-fan-1.html)†.
-
-
-[//]: # (<div align="center">)
-[//]: # (    <a href="https://"><img width="800px" height="auto" src="assets/framework.png"></a>)
-[//]: # (</div>)
+- Shanghai AI Laboratory: [Shaoting Zhang](https://scholar.google.com/citations?user=oiBMWK4AAAAJ&hl=en&oi=ao), [Xiaofan Zhang](http://www.qingyuan.sjtu.edu.cn/a/zhang-xiao-fan-1.html).
 
 ## Key Features
 [//]: # (key feature bulletin points here)
@@ -90,103 +37,99 @@ by [xxx](https://kyfafyd.wang)\*, Junwei Liu\*, Yixue Li†, and [Xiaofan Zhang]
 - Incorporated a comprehensive, in-house SARS-CoV-2 knowledge dataset from Guangzhou Laboratory.
 - Provides more reliable question answering and knowledge extraction related to SARS-CoV-2 disease.
 
-## Links
-
-- [Paper](TODO)
-- [Model](TODO)
-- [Code](TODO) 
 <!-- [Code] may link to your project at your institute>
-
 
 <!-- give a introduction of your project -->
 
 ## Details
 
-> Large language models (LLMs) have demonstrated their promising performance in comprehending natural languages and adpating to multiple downstream tasks. Despite their robust generalized abilities, the use of LLMs in certain domains, notably in the medical and clinical fields, is limited due to the potential for inaccurate responses and incorrect knowledge extraction. The SARS-CoV-2 epidemic has had a global impact, causing millions of deaths and significantly affecting the world economy. As a response, scientists have carried out extensive basic and clinical research to understand the virological characteristics, mutational landscapes, and clinical aspects of SARS-CoV-2 to aid in its diagnosis and treatment. This has resulted in thousands of scientific papers and the establishment of disease-specific regulatory mechanisms, presenting an opportunity for LLMs to fine-tune with these SARS-CoV-2 related datasets for reliable knowledge queries and responses. In this study, we combined the in-house SARS-COV-2 disease knowledge datasets from our collaborator at Guangzhou Labortory with our new LLM framework (XXX), to construct a SARS-COV-2 disease-specific LLM model (XXX). Our disease-specific LLM outperforms other existing LLMs of similar size of parameters in disease-related question answering and SARS-COV-2 related knowledge extraction, demonstrating the potential of applying LLMs in various specific domains.
-
-
-<!-- Insert a pipeline of your algorithm here if got one -->
-
-
-[//]: # (More intro text here.)
-
-
-## Datasets
-
-[//]: # (<div align="center">)
-[//]: # (    <a href="https://"><img width="800px" height="auto" src="assets/dataset.png"></a>)
-[//]: # (</div>)
-
-We utilized xxx for pre-training, <br>
-and integrated the in-house SARS-COV-2 knowledge datasets from Guangzhou Laboratory, which include XXX Tokens.
-
+> Large language models (LLMs) have demonstrated their promising performance in comprehending natural languages and adpating to multiple downstream tasks. Despite their robust generalized abilities, the use of LLMs in certain domains, notably in the medical and clinical fields, is limited due to the potential for inaccurate responses and incorrect knowledge extraction. The SARS-CoV-2 epidemic has had a global impact, causing millions of deaths and significantly affecting the world economy. As a response, scientists have carried out extensive basic and clinical research to understand the virological characteristics, mutational landscapes, and clinical aspects of SARS-CoV-2 to aid in its diagnosis and treatment. This has resulted in thousands of scientific papers and the establishment of disease-specific regulatory mechanisms, presenting an opportunity for LLMs to fine-tune with these SARS-CoV-2 related datasets for reliable knowledge queries and responses. In this study, we combined the in-house SARS-COV-2 disease knowledge datasets from our collaborator at Guangzhou Labortory with our new LLM framework (PLUSE), to construct a SARS-COV-2 disease-specific LLM model (PLUSE-COVID-19). Our disease-specific LLM outperforms other existing LLMs of similar size of parameters in disease-related question answering and SARS-COV-2 related knowledge extraction, demonstrating the potential of applying LLMs in various specific domains.
 
 ## Get Started
 
-#### Main Requirements
-- torch==1.8.0
-- torchvision==0.9.0
-- pillow==6.2.2
-- timm==0.4.12
+#### installation
+1. Download the contents of this repository to your local/remote server.
 
-#### Installation
-We suggest using Anaconda to setup environment on Linux, if you have installed anaconda, you can skip this step.
-
-```shell
-TODO
+```bash
+git clone https://github.com/openmedlab/PULSE-COVID-19
+cd PULSE-COVID-19
 ```
 
-#### Pre-training
+2. Create a conda environment and install dependencies.
 
-```shell
-TODO
+```bash
+conda env create -f llm.yml
+conda activate llm
 ```
 
-#### Downstream Fine-tuning
+The versions of `torch` and `transformers` should be higher than the suggested versions.
 
-```shell
-TODO
+#### Evaluation
+
+**Gradio**
+
+```bash
+python web_demo_gradio_gd.py
 ```
 
-#### SARS-COV-2 Question Answering
+### SARS-COV-2 Question Answering
 
 ---
 
-**Q1: What is Markdown?**
+**Q1: 新冠病毒感染人体细胞的基本原理是什么？**
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
+新冠病毒感染人体细胞的基本原理是通过其表面的刺突蛋白（S蛋白）结合到人体细胞表面的ACE2蛋白上，从而进入细胞内部。ACE2蛋白是一种细胞膜上的受体蛋白，在人体内广泛分布，特别是在肺部和肾脏中。当新冠病毒与ACE2蛋白结合时，病毒会利用ACE2蛋白的转运机制进入细胞内部，并利用细胞内的酶系统复制自身。
+在细胞内，新冠病毒利用细胞内的酶系统复制自身，并释放出病毒颗粒。这些病毒颗粒可以在细胞间传播，并感染其他细胞。此外，新冠病毒还可以通过飞沫传播、接触传播和空气传播等方式传播给他人。
+总之，新冠病毒感染人体细胞的基本原理是通过其表面的刺突蛋白结合到人体细胞表面的ACE2蛋白上，从而进入细胞内部，利用细胞内的酶系统复制自身，并释放出病毒颗粒，在细胞间传播，并感染其他细胞。
+
+---
+
+---
+
+**Q2: 为什么新冠病毒感染对有基础疾病的患者不友好？**
+
+新冠病毒感染对有基础疾病的患者不友好的原因有以下几个方面：
+1.免疫功能下降：基础疾病会导致患者的免疫功能下降，使得新冠病毒容易入侵体内并引起感染。
+2.comorbidity：许多基础疾病都伴随着其他健康问题，这些健康问题可能会增加患者感染新冠病毒并出现严重后果的风险。
+3.药物使用：某些药物可能会影响患者的免疫功能，或者与新冠病毒相互作用，增加感染的风险。
+4.并发症：基础疾病往往会导致并发症，如高血压、糖尿病等，这些并发症可能会使患者更容易出现严重后果，如呼吸困难、心脏衰竭等。
+因此，对于有基础疾病的患者，建议采取预防措施，如佩戴口罩、勤洗手、保持社交距离等，以减少感染新冠病毒的风险。如果出现发热、咳嗽、呼吸困难等症状，应及时就医。
 
 ---
 
 ---
 
-**Q2: Where can I use Markdown?**
+**Q3: 如何定义新冠病毒变异株的致病力？**
 
-Markdown can be used in many places. From note taking apps, websites like GitHub or Reddit, to Data Science tools like Jupyter Notebook.
-
----
-
-**Q3: How can I create a heading in Markdown?**
-
-You can create a heading in Markdown by using the `#` symbol followed by a space and then your heading text. The number of `#` symbols determines the level of the heading. For example, `# Heading 1`, `## Heading 2`, `### Heading 3`.
+新冠病毒变异株的致病力是指变异株引起疾病的能力。这可能涉及到变异株引起疾病的程度、严重程度、持续时间以及是否易于治疗等方面。
+目前，科学家们使用多种方法来评估新冠病毒变异株的致病力。其中一种方法是使用临床表现来评估变异株引起的疾病严重程度。例如，一些研究使用临床症状的严重程度来评估变异株引起的疾病，包括发热、咳嗽、呼吸急促、乏力等症状的严重程度。
+另一种方法是使用实验室检测来评估变异株引起的疾病。例如，一些研究使用细胞培养实验来评估变异株引起的病毒复制能力，或者使用动物实验来评估变异株引起的疾病严重程度。
+此外，一些研究还使用流行病学方法来评估变异株的致病力。例如，一些研究使用追踪病例的方法来评估变异株引起的疾病传播速度和范围。
+总之，评估新冠病毒变异株的致病力是了解变异株引起的疾病的重要一步，有助于制定更有效的预防和治疗方案。
 
 ---
 
-## 🙋‍♀️ Feedback and Contact
+---
 
-For further questions, pls feel free to contact [xxx](mailto:zwang21@cse.cuhk.edu.hk).
+**Q4: 人工智能方法在新冠疫情中发挥了什么作用？**
 
-## 🛡️ License
+人工智能方法在新冠疫情中发挥了多种作用，包括：
+1.病毒传播预测：利用机器学习算法，可以对新冠病毒传播进行预测，帮助政府制定更有效的防控措施。
+2.病毒基因组测序：利用人工智能方法，可以快速、准确地对新冠病毒的基因组进行测序，加速病毒研究进程。
+3.疫苗研发：利用人工智能方法，可以加速疫苗研发过程，提高疫苗研发成功率。
+4.临床诊断：利用人工智能方法，可以辅助医生进行新冠病毒临床诊断，提高诊断准确率。
+5.追踪接触者：利用人工智能方法，可以追踪新冠病毒接触者，帮助政府进行疫情防控。
+总之，人工智能方法在新冠疫情中发挥了多种作用，为疫情防控提供了有力的支持。
 
-This project is under the Apache License 2.0 license. See [LICENSE](LICENSE) for details.
+---
 
-## 🙏 Acknowledgement
+## Note
 
-Our code is based on [TODO](https://github.com/facebookresearch/dino), Thanks them for releasing their codes.
+Please note that certain responses or conclusions provided by this model regarding COVID-19 specific knowledge queries may be inaccurate, outdated, or limited. Our team is continuously striving to enhance the accuracy and reliability of the answers by improving and updating the model's training corpus and algorithms. We greatly appreciate user feedback and corrections as they help us refine the model and deliver an improved service.
 
-## 📝 Citation
+## License
 
-If you find this code useful, please cite in your research papers.
-```
-TODO
-```
+The code of this project is licensed under Apache 2.0, and the model weights are licensed under GNU AGPL 3.0. If the models contained in this project, or any modified versions thereof, are used in a service which results in misleading or harmful statements causing adverse effects, the responsibility lies with the service provider and is not associated with or attributable to this project.
+
+
+
