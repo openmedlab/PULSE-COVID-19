@@ -28,11 +28,10 @@ This model was fine-tuned based on the [PULSE](https://github.com/openmedlab/PUL
 ## Contributors
 - Guangzhou Laboratory: [Yixue Li](https://scholar.google.com/citations?hl=en&user=Qv27G1cAAAAJ), [Feng Gao](https://scholar.google.com/citations?hl=en&user=deiLMp8AAAAJ), [Junwei Liu](https://scholar.google.com/citations?hl=en&user=VuuF5pIAAAAJ), Yiping Chen, Lu Zhou.
 
-- Shanghai AI Laboratory: [Shaoting Zhang](https://scholar.google.com/citations?user=oiBMWK4AAAAJ&hl=en&oi=ao), [Xiaofan Zhang](http://www.qingyuan.sjtu.edu.cn/a/zhang-xiao-fan-1.html).
+- Shanghai AI Laboratory: [Shaoting Zhang](https://scholar.google.com/citations?user=oiBMWK4AAAAJ&hl=en&oi=ao), [Xiaofan Zhang](http://www.qingyuan.sjtu.edu.cn/a/zhang-xiao-fan-1.html), kui xue.
 
 ## Key Features
 [//]: # (key feature bulletin points here)
-
 - Developed a Large Language Model (LLM) specifically for the COVID-19 disease domain.
 - Incorporated a comprehensive, in-house COVID-19 knowledge dataset from Guangzhou Laboratory.
 - Provides more reliable question answering and knowledge extraction related to the COVID-19 epidemic and SARS-COV-2 virus.
