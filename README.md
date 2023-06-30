@@ -64,6 +64,7 @@ conda activate llm
 ```bash
 python web_demo_gradio_gd.py
 ```
+As the COVID-19 corpus used for training is subject to restrictions, the trained weights will be made available upon request from the authors.
 
 ## COVID-19 Question Answering
 
